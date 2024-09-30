@@ -224,20 +224,18 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
   .sections-card-header{
     width: 100%;
     overflow: hidden;
-
+   
   }
-/*!LEFT SIDE HEADER */
-
-/*!LEFT SIDE HEADER */
-
 /*!RIGHT SIDE HEADER */
   .right-side-header{
     justify-content: end;
     flex-flow: column nowrap;
+    position: relative;
   }
 
   .words-pill-con{
@@ -246,7 +244,7 @@ body{
     
   }
     .word-pill{
-      font-size: clamp(1.5rem, 0.5rem + 8vw - 10vh, 4rem);
+      font-size: clamp(1.5rem, 0.5rem + 2vh + 0.5vw, 4rem);
     }
     .cirlce-word{
       color: var(--Blanco);
@@ -254,10 +252,17 @@ body{
   .text-call{
     justify-content: start;
   }
+  .sections-card-header{
+    
+  }
+    .sections-card-header p{
+      font-size: clamp(0.3rem, 0rem + 1.2vw, 1rem);
+    }
   .action-call{
     justify-content: start;
   }
   .categorias-cont{
+    
     justify-content: start;
   }
     .btn-cat-header{
@@ -441,3 +446,34 @@ body{
       }
 
 /** ----------------- FEATURES -----------------*/
+
+
+/** ----------------- FOOTER -----------------*/
+.inner-footer-container{
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.rigth-footer{
+  align-items: start;
+  flex-flow: column nowrap;
+}
+  .rigth-footer figure{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    font-size: clamp(0.5rem, 0rem + 8vw, 4.5rem);
+    font-weight: bold;
+    color: var(--Rojo);
+  }
+    .rigth-footer img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .rigth-footer p{
+      
+    }
+/** ----------------- FOOTER -----------------*/
