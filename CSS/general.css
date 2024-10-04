@@ -53,6 +53,9 @@ body{
   .bg-rojo{
     background-color: var(--Rojo);
   }
+  .border.border-rojo{
+    border-color: var(--Rojo) !important; 
+  }
   .bg-negro{
     background-color: var(--Negro);
   }
@@ -61,6 +64,9 @@ body{
   }
   .border.border-negroT{
     border-color: var(--NegroT) !important; 
+  }
+  .color-b{
+    color: var(--Blanco);
   }
   .d-flexeo{
     display: flex;
@@ -399,7 +405,7 @@ body{
 
 /** ----------------- FEATURES -----------------*/
 .features-cont{
-
+  overflow:hidden
 }
 
   .inter-card-container-feature{
@@ -446,6 +452,68 @@ body{
       }
 
 /** ----------------- FEATURES -----------------*/
+
+
+/** ----------------- PRICING -----------------*/
+
+.info-pricing{
+  aspect-ratio: 3/2;
+}
+  .pricing-info{
+    font-size: clamp(1rem, 0.5rem + 4vw, 1.2rem);
+  }
+  .pricing-text-bene{
+    font-size: clamp(1rem, 0.5rem + 4vw, 1.2rem);
+    font-weight: bold;
+  }
+  .info-pricing i{
+    font-size: clamp(1rem, 0.5rem + 5vw, 1.8rem);
+
+  }
+
+
+.container-options-pricing{
+  justify-content: space-between;
+  flex-flow: column nowrap;
+}
+  .option-pricing{
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    aspect-ratio: 5/1;
+    cursor: pointer;
+  }
+    .active-price{
+      background-color: var(--Rojo) !important;
+      color: var(--Blanco);
+      border-color: var(--Rojo);
+    }
+    .option-pricing.active-price{
+      border-color: var(--Rojo) !important;
+    }
+    .price-pricing{
+      font-weight: bold;
+    }
+      .price-pricing p{
+        font-size: clamp(1rem, 0.5rem + 7vw, 2.3rem);
+      }
+      .price-pricing small{
+        font-size: clamp(0.3rem, 0rem + 1.2vw, 1rem);
+      }
+/** ----------------- PRICING -----------------*/
+
+
+/** ----------------- NOSOTROS -----------------*/
+.cuadrito-US{
+  overflow: hidden;
+}
+.cuadrito-US p{
+  text-align: justify;
+}
+/** ----------------- NOSOTROS -----------------*/
+
+
+
+
 
 
 /** ----------------- FOOTER -----------------*/
