@@ -19,6 +19,7 @@
 
     /* CATEGORIAS */
     --C-Naranja: #ffa203;
+    --C-NaranjaDark: #cc8100;
     --C-Azul: #101584;
     --C-Rojo: hsl(358, 82%, 52%);
     --C-Morado: #874ccc;
@@ -130,6 +131,12 @@ body{
   }
   .top-80{
     top: 80% !important;
+  }
+  .general-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   .hoverUP:hover{
     transform: translateY(-0.3rem);
@@ -344,82 +351,37 @@ p{
 
 
 
-/** ----------------- TEXT CATCH -----------------*/
-.text-catch-container{
-}
-  .img-text-catch{
-    overflow: hidden;
-    max-height: 30vh;
-  }
-    .img-text-catch img{
+/** ----------------- TEXT CATCH -----------------*/ 
+    .text-catch-inner{
+      overflow: hidden;
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: center;
     }
-
-
-  .text-catch-container h1{
-    line-height: calc(1rem + 6vh);
-    text-align: justify;
-  }
-    .higlight-text-pill{
-      border-color: var(--Rojo) !important;
-    }
-    .higlight-text-solid{
-      border-color: var(--Rojo) !important;
-      background-color: var(--Rojo);
-      color: var(--Blanco);
-    }
+      .text-catch-inner h4{
+        font-size: clamp(2rem, 0.5rem + 4vw, 3rem);
+        font-weight: bold;
+        color: var(--Blanco);
+      }
+      .text-catch-inner a{
+        background-color: var(--C-NaranjaDark);
+        color: var(--Blanco);
+        font-size: clamp(2rem, 0.5rem + 6vw, 2.5rem);
+      }
+      .text-catch-inner img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
 /** ----------------- TEXT CATCH -----------------*/
 
 
 
-/** ----------------- CARDS -----------------*/
-.card-container{
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: start;
-  position: relative;
-}
-  .card-container:hover .image-back-card{
-    scale: 1.1;
-  }
-  .image-back-card{
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 1;
 
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  .top-card-section{
-    justify-content: space-between;
-    z-index: 2;
-  }
-    .btn-card {
-      color: var(--Negro);
-      aspect-ratio: 6/1;
-      font-size: clamp(0.7rem, 0.5rem + 4vw, 1.2rem);
-    }
-    .btn-card:nth-of-type(2) {
-      aspect-ratio: 1/1;
-      font-size: clamp(0.9rem, 0.5rem + 6vw, 1.2rem);
-    }
-  .down-card-section{
-    z-index: 2;
-  }
-    .down-card-section h4{
-      font-size: clamp(1rem, 0.5rem + 4vw, 1.5rem);
-    }
-/** ----------------- CARDS -----------------*/
-
-
+/* .btn-card:nth-of-type(2) {
+  aspect-ratio: 1/1;
+  font-size: clamp(0.9rem, 0.5rem + 6vw, 1.2rem);
+} */
 /** ----------------- CATEGORIAS -----------------*/
 .categorias-cont-cool{
   position: relative;
@@ -467,49 +429,12 @@ p{
     .container-categoria-principla .top-categoria-card{
       text-align: left;
     }
-
-
-.categorias-cont-cool{
-  
-}
-  .text-back-categoria{
-    position: absolute;
-    font-size: clamp(3rem, 1rem + 15vw, 10rem);
-    z-index: -1;
-  }
-
-  .card-cat{
-    text-align: center;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-  }
-    .card-cat p{
-      font-size: clamp(0.3rem, 0rem + 1.2vw, 1rem);
-    }
-    .btn-cat-cat{
-      color: var(--Blanco);
-      font-size: clamp(0.7rem, 0.5rem + 4vw, 1.2rem);
-      aspect-ratio: 1/1;
-      margin: 0 auto;
-    }
-      .btn-cat-cat:hover{
-        background-color: var(--Negro);
-        color: var(--Blanco);
-      }
-
-    .btn-cat-action{
-      aspect-ratio: 3/1;
-      
-    }
-      .btn-cat-action:hover{
-        border-color: var(--Negro) !important;
-      }
 /** ----------------- CATEGORIAS -----------------*/
 
 
 /** ----------------- ACTION CALL -----------------*/
 .container-action-call{
-background-image: url(../RECURSOS/Dia\ de\ los\ Muertos\ Festival\ Scene.jpeg);
+background-image: url(../RECURSOS/Aerial\ View\ of\ Urban\ Architecture.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -524,61 +449,44 @@ background-image: url(../RECURSOS/Dia\ de\ los\ Muertos\ Festival\ Scene.jpeg);
 
   }
     .card-places-container{
-      position: relative;
       height: 35rem;
       max-height: 40rem;
       aspect-ratio: 2/3;
+      overflow: hidden;
+      font-weight: bold;
     }
-      .card-places-figure{
+      .card-img-01{
+        height: 70%;
         overflow: hidden;
-        transform: scale(1.3);
       }
-        .card-places-figure  img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;
-          
+
+      .card-title-02{
+        height: 20%;
+        justify-content: start;
+        flex-flow: row nowrap;
+      }
+        .card-02-logo{
+          width: 18%;
+          aspect-ratio: 1/1;
+          overflow: hidden;
         }
-      
-      .card-places-informatio{
-        position: relative;
-        z-index: 4;
-        justify-content: space-between;
-        flex-flow: column nowrap;
-      }
-        .card-places-informatio h6{
-          font-size: clamp(1rem, 0.5rem + 2vw, 1.8rem);
-          font-weight: bold;
+        .card-02-name{
+          width: 78%;
+          font-size: clamp(0.8rem, 0.5rem + 4vw, 1.2rem);
         }
 
-        .card-places-info{
-          text-transform: uppercase;
-          flex-flow: column nowrap;
-        } 
-          .card-inner-words{
-            justify-content: space-evenly;
-            flex-flow: row nowrap;
-          }
-            .key-word-place{
-              font-size: clamp(0.6rem, 0.3rem + 1vw, 0.8rem);
-              font-weight: bold;
-              color: var(--Negro);
-            }
-          .card-inner-metric{
-            justify-content: space-around;
-            flex-flow: row nowrap;
-            font-size: clamp(0.6rem, 0.3rem + 1vw, 1rem);
-            color: var(--Negro);
-          }
-            .place-visit{
-              font-size: clamp(1rem, 0.3rem + 4vw, 1.5em);
-            }
-
-
-
-
-
+      .card-info-03{
+        height: 10%;
+        color: var(--Negro);
+        font-weight: 500;
+        justify-content: start;
+        flex-flow: row nowrap;
+      }
+        .card-03-visit{
+          margin-left: auto;
+          font-size: clamp(0.8rem, 0.5rem + 5vw, 1.5rem);
+        }
+  
     .text-container-AC-01{
       
     }
@@ -616,39 +524,40 @@ background-image: url(../RECURSOS/Dia\ de\ los\ Muertos\ Festival\ Scene.jpeg);
     margin: 0;
   }
 
-
   .btn-card-ac{
     font-size: clamp(2rem, 0.5rem + 6vw, 2.5rem);
   }
 
-  .image-container-AC-02 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+
+  .image-container-AC-02{
+    position: relative;
+    flex-flow: column nowrap;
+    z-index: 3;
   }
+  .is-pointer-down, .is-dragging {
+    z-index: 10;
+  }
+    .card-action-call{
+      cursor: grab;
+      position: absolute;
+      /* transform: translate(-50%, -50%); */
+      top: 5%;
+      right: 15%;
+    }
+      .c-a-a-02{
+        top: 10%;
+      }
+      .c-a-a-03{
+        top: 15%;
+      }
+      .c-a-a-04{
+        top: 20%;
+      }
+      .c-a-a-05{
+        top: 25%;
+      }
+
 /** ----------------- ACTION CALL -----------------*/
-
-
-/** ----------------- NOSOTROS -----------------*/
-.card-Us-conatiner{
-  aspect-ratio: 2/1;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: start;
-}
-  .card-Us-conatiner p{
-    text-align: justify;
-  }
-
-
-.cuadrito-US{
-  overflow: hidden;
-}
-.cuadrito-US p{
-  text-align: justify;
-}
-/** ----------------- NOSOTROS -----------------*/
 
 
 /** ----------------- FEATURES -----------------*/
@@ -747,13 +656,6 @@ background-image: url(../RECURSOS/Dia\ de\ los\ Muertos\ Festival\ Scene.jpeg);
         font-size: clamp(0.3rem, 0rem + 1.2vw, 1rem);
       }
 /** ----------------- PRICING -----------------*/
-
-
-
-
-
-
-
 
 
 /** ----------------- FOOTER -----------------*/
