@@ -343,6 +343,26 @@ p{
       .cat-5{
         background-color: var(--C-Verde);
       }
+      .hove-1:hover{
+        background-color: var(--C-Naranja) !important;
+        border-color: var(--C-Naranja) !important;
+      }
+      .hove-2:hover{
+        background-color: var(--C-Azul) !important;
+        border-color: var(--C-Azul) !important;
+      }
+      .hove-3:hover{
+        background-color: var(--C-Morado);
+        border-color: var(--C-Morado) !important;
+      }
+      .hove-4:hover{
+        background-color: var(--C-Rojo) !important;
+        border-color: var(--C-Rojo) !important;
+      }
+      .hove-5:hover{
+        background-color: var(--C-Verde) !important;
+        border-color: var(--C-Verde) !important;
+      }
       .colo-1{
         color: var(--C-Naranja);
       }
@@ -916,19 +936,51 @@ p{
 .header-category-container{
   
 }
-  .inner-card-category-container{
-    background-image: url(../RECURSOS/Classical\ Museum\ Interior.jpeg);
+  .header-category-container-inner{
+    background-image: url(../RECURSOS/Serene\ Companionship\ by\ the\ Sea.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    justify-content: start;
     align-items: end;
   }
-  .float-text-category-header{
-    width: fit-content;
-  }
-    .float-text-category-header h4{
-      font-size: clamp(1.8rem, 0.5rem + 4vw, 2.5rem);
+    .inner-card-CH{
+      height: 50%;
     }
+      .container-inner-inner-card-CH{
+        justify-content: end;
+        align-items: start;
+        flex-flow: column nowrap;
+      }
+        .container-inner-inner-card-CH h4{
+          margin: 0;
+          font-weight: bold;
+          color: var(--Blanco);
+        }
+        .top-inner-inner{
+          justify-content: start;
+        }
+        .down-inner-inner h4{
+
+          font-size: clamp(2rem, 0.5rem + 4vw, 3rem);
+          text-transform: uppercase;
+        }
+
+        .item-inner-inner{
+          justify-content: end;
+          flex-flow: row wrap;
+        }
+          .item-categoty-header{
+            border-color: var(--Blanco);
+
+          }
+
+      .circle-header-category{
+        width: 20%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 30%;
+        left: 88%;
+      }
 /** ----------------- CATEGORY PAGES -----------------*/
