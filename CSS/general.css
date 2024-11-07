@@ -18,7 +18,7 @@
     --C-Naranja: #ffa203;
     --C-NaranjaDark: #cc8100;
     --C-Azul: #101584;
-    --C-Rojo: hsl(358, 82%, 52%);
+    --C-Rojo: #e92027;
     --C-Morado: #874ccc;
     --C-Verde: #42ae70;
 
@@ -1053,6 +1053,91 @@ p{
 
 }
   .categories-card-item{
-    /* aspect-ratio: 2/3; */
+    min-height: 15vh;
+    flex-flow: column  nowrap;
+    justify-content: space-between;
+    color: var(--Negro);
+    border-color: var(--Negro) !important;
+    background-color: var(--Blanco);
   }
+    .categories-card-item:hover{
+      color:var(--Blanco);
+    }
+    .item-logo-filter{
+      height: 40%;
+      color: currentColor;
+    }
+      .item-logo-filter:hover{
+        background-color: transparent;
+      }
+    .item-info-filter{
+      height: 60%;
+      text-align: center;
+      flex-flow: column nowrap;
+    }
+    .active-categories-item{
+      color: var(--Blanco) !important;
+    }
+    .actCat-1{
+      background-color: var(--C-Naranja);
+      border-color:  var(--C-Naranja) !important;
+    }
+    .actCat-2{
+      background-color: var(--C-Azul); 
+      border-color:  var(--C-Azul) !important;
+    }
+    .actCat-3{
+      background-color: var(--C-Morado);
+      border-color:  var(--C-Morado) !important;
+    }
+    .actCat-4{
+      background-color: var(--C-Rojo);
+      border-color:  var(--C-Rojo) !important;
+    }
+    .actCat-5{
+      background-color: var(--C-Verde);
+      border-color:  var(--C-Verde) !important;
+    }
+    .actCat-0{
+      background-color: var(--Negro);
+      border-color:  var(--Negro) !important;
+    }
+    .hove-0:hover{
+      background-color: var(--Negro);
+    }
+
 /** ----------------- CATEGORY CATEGORIES -----------------*/
+
+
+.places-cat-container{
+  min-height: 100vh;
+  height: auto;
+}
+
+  .places-cat-container > .card-places-container{
+    width: 22% !important;
+    height: auto;
+    aspect-ratio: 2/3;
+    overflow: hidden;
+    font-weight: bold;
+    float: left;
+  }
+  /* .card-places-container:hover .card-places-container:not(:hover){
+    filter: blur(5px);
+    opacity: 0.5;
+  } */
+  .places-gap{
+    width: 3%;
+  }
+  .places-column{
+    width: 22%;
+  }
+  .places-cat-container > .up-card-places-container{
+    aspect-ratio: 3/5;
+  }
+  .places-cat-container > .down-card-places-container{
+    aspect-ratio: 3/4;
+  }
+  .places-cat-container > .large-card-places-container{
+    aspect-ratio: 3/6;
+  }
