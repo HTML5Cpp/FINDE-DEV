@@ -29,7 +29,7 @@
 </head>
 <body>
 <!-- NAV -->
-    <nav class="fixed-top px-4 py-2">
+    <nav class="fixed-top px-4 py-2 nav-desktop">
         <div class="container-fluid blur-bg-nav rounded-4">
             <div class="row">
                 <div class="col-6">
@@ -63,13 +63,25 @@
             
         </div>
     </nav>
+
+    <nav class="fixed-top p-0 m-0 nav-mobile">
+        <div class="rounded-circle btn-nav-mobile" id="btn-nav-mobile">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <div class="w-100 h-100 bg-white vh-100">
+            <div class="inner-nav-mobile">
+
+            </div>
+        </div>
+    </nav>
 <!-- NAV -->
 
 <!-- HEADER -->
     <header class="container-fluid py-2 px-4 vh-100 header-finde overflow-hidden">
         <div class="row h-100">
-            <div class="offset-6 col-6 ">
-                <div class="w-100 h-100 d-flexeo bg-white rounded-4 right-side-header py-5 ps-5 gap-2">
+            <div class="offset-0 col-12 offset-sm-0 col-sm-6  offset-md-0 col-md-12 offset-lg-6 col-lg-6 father-right-side-header">
+                <div class="w-100 h-sm-80 100 h-md-50 100 h-100 d-flexeo bg-white rounded-4 right-side-header py-5 ps-5 gap-2">
                     <div class="sections-card-header words-pill-con d-flexeo gap-2">
                         <span class="word-pill border border-3 border-negro rounded-pill py-2 px-3">Disfruta.</span>
                         <span class="word-pill border border-3 border-negro rounded-pill py-2 px-3">Descubre.</span>
@@ -116,8 +128,8 @@
                     </div>  
                     <div class="col-6" style="height: 40%;">
                         <div class="text-catch-inner py-3">
-                           <div class="w-100 h-100 rounded-4 cat-1 p-3">
-                                <h4 class="">Encuentra estas y muchas experiencias hoy.</h4>
+                           <div class="w-100 h-100 rounded-4 cat-1 p-3 d-flexeo ">
+                                <h4 class="w-100">Encuentra estas y muchas experiencias hoy.</h4>
                                 <a href="" class="links color-b py-2 px-4 rounded-pill btn-g-b "><i class='bx bx-right-arrow-alt'></i></a>
                            </div>
                         </div> 

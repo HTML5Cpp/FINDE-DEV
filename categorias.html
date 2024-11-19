@@ -28,7 +28,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- JS -->
-
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -83,7 +83,7 @@
 
     <!-- HEADER CATEGORY -->
     <header class="container-fluid p-4 pt-2 overflow-hidden position-relative vh-100 header-category-container">
-        <div class="w-100 h-100 overflow-hidden rounded-4 header-category-container-inner d-flexeo p-3 position-relative">
+        <div class="w-100 h-100 overflow-hidden rounded-4 header-category-container-inner d-flexeo p-3 position-relative" id="header-category-container-inner">
             <div class="w-100 inner-card-CH rounded-4">
                 <div class="row h-100">
                     <div class="col-7">
@@ -101,11 +101,11 @@
                     <div class="col-5">
                         <div class="w-100 h-100 p-0 container-inner-inner-card-CH d-flexeo position-relative">
                             <div class="w-100 item-inner-inner d-flexeo gap-2 p-3">
-                               <div class="item-categoty-header links border border-2 border-white rounded-pill py-2 px-3 d-flexeo gap-2 color-b hove-1 trans"><i class='bx bx-restaurant'></i> Restaurantes</div>
-                               <div class="item-categoty-header links border border-2 border-white rounded-pill py-2 px-3 d-flexeo gap-2 color-b hove-2 trans"><i class='bx bxs-palette' ></i> Cultura y Arte</div>
-                               <div class="item-categoty-header links border border-2 border-white rounded-pill py-2 px-3 d-flexeo gap-2 color-b hove-5 trans"><i class='bx bxs-donate-heart' ></i> Salud y Bienestar</div>
-                               <div class="item-categoty-header links border border-2 border-white rounded-pill py-2 px-3 d-flexeo gap-2 color-b hove-3 trans"><i class='bx bxs-party' ></i> Vida nocturna</div>
-                               <div class="item-categoty-header links border border-2 border-white rounded-pill py-2 px-3 d-flexeo gap-2 color-b hove-4 trans"><i class='bx bxs-bowling-ball' ></i> Recreación y Diversión</div>
+                               <div class="item-categoty-header links rounded-pill py-2 px-3 d-flexeo gap-2 color-b hove-1 trans cat-1"><i class='bx bx-restaurant'></i> Restaurantes</div>
+                               <div class="item-categoty-header links rounded-pill py-2 px-3 d-flexeo gap-2 color-b hove-2 trans cat-2"><i class='bx bxs-palette' ></i> Cultura y Arte</div>
+                               <div class="item-categoty-header links rounded-pill py-2 px-3 d-flexeo gap-2 color-b hove-5 trans cat-5"><i class='bx bxs-donate-heart' ></i> Salud y Bienestar</div>
+                               <div class="item-categoty-header links rounded-pill py-2 px-3 d-flexeo gap-2 color-b hove-3 trans  cat-3"><i class='bx bxs-party' ></i> Vida nocturna</div>
+                               <div class="item-categoty-header links rounded-pill py-2 px-3 d-flexeo gap-2 color-b hove-4 trans  cat-4"><i class='bx bxs-bowling-ball' ></i> Recreación y Diversión</div>
                             </div>
                         </div>
                     </div>
@@ -113,16 +113,23 @@
             </div>
 
             <div class="circle-header-category rounded-circle">
-                <div class="w-100 h-100 rounded-circle border border-2 border-white p-3 overflow-hidden d-flexeo">
-                        <img src="./RECURSOS/Urban Oasis_ Sunlit Leisure in the City Park.jpeg" alt="" class="general-img rounded-circle">
+                <div class="w-100 h-100 rounded-circle border border-2 border-white p-3 overflow-hidden d-flexeo" >
+                    <div class="w-100 h-100 d-flexeo rounded-circle" id="header-category-container-inner-circle">
+
+                    </div>
                 </div>
             </div>
 
             <div class="category-catch">
-                <div class="w-100 h-100 p-0 m-0 d-flexeo inner-category-catch">
+
+                <!-- <div class="w-100 h-100 position-relative overflow-hidden">
+                    <img src="./RECURSOS/forma-categoria-header.png"  alt="" class="general-img">
+                </div> -->
+
+                <!-- <div class="w-100 h-100 p-0 m-0 d-flexeo inner-category-catch">
                     <div class="w-100 d-flexeo inner-cat-cat-01">
                         <div class="rounded-top-circle bg-white p-2 circle-cat-cat-01 d-flexeo">
-                            <a href="" class="links rounded-circle p-3 btn-cat-header trans d-flexeo cat-1"><i class='bx bx-restaurant'></i> </a>
+                            <a href="" class="links rounded-circle p-3 btn-cat-header trans d-flexeo cat-1"><i class='bx bxs-category-alt'></i> </a>
                         </div>
                         <div class="rounded-pill p-2 div-cat-cat-01 bg-white d-flexeo h-100">
                             <h4 class="m-0">+ 250 Clientes y Usuarios</h4>
@@ -143,7 +150,7 @@
                         </div>
                         <div class="corner-styled corner-down border border-0 p-0 m-0"></div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
@@ -153,70 +160,245 @@
     <section class="container-fluid overflow-hidden p-4 position-relative">
         <div class="row">
             <div class="col-6">
-                <div class="w-100 h-100 d-flexeo">
-                    <div class="input-group input-group-lg mb-3 input-footer-form w-100">
-                        <button class="btn btn-outline-secondary rounded-start-4 px-4 py-3 border border-0 bg-rojodark color-b btn-footer trans d-flexeo" type="button" id="button-addon2"><i class='bx bx-search'></i></button>
-                        <input type="text" class="form-control p-3 rounded-end-4 border border-2 border-negro focus-ring focus-ring-light" placeholder="Busca un lugar aquí...">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="w-100 h-100 d-flexeo">
+                            <div class="input-group input-group-lg mb-3 input-footer-form w-100">
+                                <button class="btn btn-outline-secondary rounded-start-4 px-4 py-3 border border-0 bg-rojodark color-b btn-footer trans d-flexeo" type="button" id="button-addon2"><i class='bx bx-search'></i></button>
+                                <input type="text" class="form-control p-3 rounded-end-4 border border-2 border-negro focus-ring focus-ring-light" placeholder="Busca un lugar aquí...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row h-100">
+                            <div class="col-2">
+                                <button class="w-100 h-100 rounded-4 overflow-hidden categories-card-item d-flexeo border border-2 trans hove-0 active-categories-item actCat-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter"><i class='bx bxs-category-alt'></i> </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">Todos</h6>
+                                        <small class="m-0">325 lugares</small>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="w-100 h-100 rounded-4 overflow-hidden categories-card-item d-flexeo border border-2 trans hove-1">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter"><i class='bx bx-restaurant'></i> </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">Restaurantes</h6>
+                                        <small class="m-0">325 lugares</small>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="w-100 h-100 rounded-4 overflow-hidden categories-card-item d-flexeo border border-2 trans hove-2">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter"><i class='bx bxs-palette'></i> </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">Cultura y Arte</h6>
+                                        <small class="m-0">325 lugares</small>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="w-100 h-100 rounded-4 overflow-hidden categories-card-item d-flexeo border border-2 trans hove-4">
+        
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter"><i class='bx bxs-bowling-ball'></i> </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">Recreación y Diversión</h6>
+                                        <small class="m-0">325 lugares</small>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="w-100 h-100 rounded-4 overflow-hidden categories-card-item d-flexeo border border-2 trans hove-3">
+        
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter"><i class='bx bxs-party'></i> </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">Vida Cocturna</h6>
+                                        <small class="m-0">325 lugares</small>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="w-100 h-100 rounded-4 overflow-hidden categories-card-item d-flexeo border border-2 trans hove-5">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter"><i class='bx bxs-donate-heart'></i> </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">Salud y Bienestar</h6>
+                                        <small class="m-0">325 lugares</small>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-6">
                 <div class="row h-100">
-                    <div class="col-2">
-                        <button class="w-100 h-100 rounded-4 overflow-hidden categories-card-item d-flexeo border border-2 trans hove-0">
-                            <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter"><i class='bx bxs-category-alt'></i> </div>
-                            <div class="w-100 item-info-filter p-2 d-flexeo">
-                                <h6 class="m-0">Todos</h6>
-                                <small class="m-0">325 lugares</small>
+                    <div class="col-12">
+                        <div class="row h-100">
+                            <div class="col-2 ">
+                                <button class="w-100 rounded-4 overflow-hidden stars-filter-item categories-card-item d-flexeo border border-2 trans hove-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter">
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                    </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">1</h6>
+                                    </div>
+                                </button>
                             </div>
-                        </button>
+                            <div class="col-2 ">
+                                <button class="w-100 rounded-4 overflow-hidden stars-filter-item categories-card-item d-flexeo border border-2 trans hove-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter">
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                    </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">2</h6>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="w-100 rounded-4 overflow-hidden stars-filter-item categories-card-item d-flexeo border border-2 trans hove-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter">
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                    </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">3</h6>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="w-100 rounded-4 overflow-hidden stars-filter-item categories-card-item d-flexeo border border-2 trans hove-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter">
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bx-star' ></i>
+                                    </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">4</h6>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="w-100 rounded-4 overflow-hidden stars-filter-item categories-card-item d-flexeo border border-2 trans hove-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter">
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                    </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">5</h6>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="w-100 rounded-4 overflow-hidden stars-filter-item categories-card-item d-flexeo border border-2 trans hove-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter">
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                    </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">2</h6>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <button class="w-100 h-100 rounded-4 overflow-hidden categories-card-item d-flexeo border border-2 trans hove-1">
-                            <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter"><i class='bx bx-restaurant'></i> </div>
-                            <div class="w-100 item-info-filter p-2 d-flexeo">
-                                <h6 class="m-0">Restaurantes</h6>
-                                <small class="m-0">325 lugares</small>
+                    <div class="col-12">
+                        <div class="row h-100">
+                            <div class="col-2 d-flexeo down-column">
+                                <button class="w-100 rounded-4 overflow-hidden stars-filter-item categories-card-item d-flexeo border border-2 trans hove-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter">
+                                        <i class='bx bx-dollar' ></i> 
+                                    </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">Bajo</h6>
+                                    </div>
+                                </button>
                             </div>
-                        </button>
-                    </div>
-                    <div class="col-2">
-                        <button class="w-100 h-100 rounded-4 overflow-hidden categories-card-item d-flexeo border border-2 trans hove-2">
-                            <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter"><i class='bx bxs-palette'></i> </div>
-                            <div class="w-100 item-info-filter p-2 d-flexeo">
-                                <h6 class="m-0">Cultura y Arte</h6>
-                                <small class="m-0">325 lugares</small>
+                            <div class="col-2 d-flexeo down-column">
+                                <button class="w-100 rounded-4 overflow-hidden stars-filter-item categories-card-item d-flexeo border border-2 trans hove-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter">
+                                        <i class='bx bx-dollar' ></i> 
+                                        <i class='bx bx-dollar' ></i> 
+                                    </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">Medio</h6>
+                                    </div>
+                                </button>
                             </div>
-                        </button>
-                    </div>
-                    <div class="col-2">
-                        <button class="w-100 h-100 rounded-4 overflow-hidden categories-card-item d-flexeo border border-2 trans hove-4">
-
-                            <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter"><i class='bx bxs-bowling-ball'></i> </div>
-                            <div class="w-100 item-info-filter p-2 d-flexeo">
-                                <h6 class="m-0">Recreación y Diversión</h6>
-                                <small class="m-0">325 lugares</small>
+                            <div class="col-2 d-flexeo down-column">
+                                <button class="w-100 rounded-4 overflow-hidden stars-filter-item categories-card-item d-flexeo border border-2 trans hove-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter">
+                                        <i class='bx bx-dollar' ></i> 
+                                        <i class='bx bx-dollar' ></i> 
+                                        <i class='bx bx-dollar' ></i> 
+                                    </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">Alto</h6>
+                                    </div>
+                                </button>
                             </div>
-                        </button>
-                    </div>
-                    <div class="col-2">
-                        <button class="w-100 h-100 rounded-4 overflow-hidden categories-card-item d-flexeo border border-2 trans hove-3">
-
-                            <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter"><i class='bx bxs-party'></i> </div>
-                            <div class="w-100 item-info-filter p-2 d-flexeo">
-                                <h6 class="m-0">Vida Cocturna</h6>
-                                <small class="m-0">325 lugares</small>
+                            <div class="col-2 d-flexeo down-column">
+                                <button class="w-100 rounded-4 overflow-hidden stars-filter-item categories-card-item d-flexeo border border-2 trans hove-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter">
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                    </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">2</h6>
+                                    </div>
+                                </button>
                             </div>
-                        </button>
-                    </div>
-                    <div class="col-2">
-                        <button class="w-100 h-100 rounded-4 overflow-hidden categories-card-item d-flexeo border border-2 trans hove-5">
-                            <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter"><i class='bx bxs-donate-heart'></i> </div>
-                            <div class="w-100 item-info-filter p-2 d-flexeo">
-                                <h6 class="m-0">Salud y Bienestar</h6>
-                                <small class="m-0">325 lugares</small>
+                            <div class="col-2 d-flexeo down-column">
+                                <button class="w-100 rounded-4 overflow-hidden stars-filter-item categories-card-item d-flexeo border border-2 trans hove-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter">
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                    </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">2</h6>
+                                    </div>
+                                </button>
                             </div>
-                        </button>
+                            <div class="col-2 d-flexeo down-column">
+                                <button class="w-100 rounded-4 overflow-hidden stars-filter-item categories-card-item d-flexeo border border-2 trans hove-0">
+                                    <div class="links rounded-circle p-3 btn-cat-header trans d-flexeo item-logo-filter">
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bxs-star'></i> 
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                    </div>
+                                    <div class="w-100 item-info-filter p-2 d-flexeo">
+                                        <h6 class="m-0">2</h6>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -228,7 +410,7 @@
 <section class="container-fluid overflow-hidden p-4 pe-5 places-cat-container">
     <div class="places-gap"></div>
     <div class="places-column"></div>
-    <a href="" target="_self" class="card-places-container up-card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container up-card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -244,7 +426,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container large-card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container large-card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -260,7 +442,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container up-card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container up-card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -276,7 +458,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container down-card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container down-card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -292,7 +474,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -308,7 +490,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container up-card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container up-card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -324,7 +506,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container large-card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container large-card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -340,7 +522,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container up-card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container up-card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -356,7 +538,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container down-card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container down-card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -372,7 +554,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -388,7 +570,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container up-card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container up-card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -404,7 +586,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container large-card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container large-card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -420,7 +602,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container up-card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container up-card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -436,7 +618,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container down-card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container down-card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -452,7 +634,7 @@
             <div class="card-03-visit bg-white rounded-circle p-2 d-flexeo"><i class='bx bx-right-arrow-alt' ></i></div>
         </div>
     </a>
-    <a href="" target="_self" class="card-places-container rounded-4 p-3 bg-negro links color-b trans">
+    <a href="producto.html" target="_self" class="card-places-container rounded-4 p-3 bg-negro links color-b trans">
         <figure class="card-img-01 w-100 rounded-4  m-0">
             <img src="./MEDIA/culture/background/museo.webp" class="general-img" alt="">
         </figure>
@@ -471,6 +653,44 @@
     
 </section>  
 
+<!-- FOOTER -->
+<footer class="container-fluid p-4 overflow-hidden position-relative vh-50 footer-container">
+    <div class="row h-100">
+        <div class="col-8">
+            <div class="bg-rojo rounded-4 overflow-hidden w-100 h-100 p-4">
+                <div class="row h-100">
+                    <div class="col-6">
+                        <div class="w-100 h-100 color-b footer-form-container d-flexeo">
+                            <div class="w-100">
+                                <h4 class="mb-3">Ponte en contacto con nosotros:</h4>
+                                <div class="input-group input-group-lg mb-3 input-footer-form">
+                                    <input type="text" class="form-control p-3 rounded-start-4 border border-0 focus-ring focus-ring-danger" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="button-addon2">
+                                    <button class="btn btn-outline-secondary rounded-end-4 px-4 py-3 border border-0 bg-rojodark color-b btn-footer trans d-flexeo" type="button" id="button-addon2"><i class='bx bx-right-arrow-alt'></i></button>
+                                </div>
+                            </div>
+                            <h4 class="finde-footer-text">FINDE</h4>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="w-100 h-100 d-flexeo footer-links-container">
+                            <a href="" class="footer-link trans" target="_self">Nosotros</a>
+                            <a href="" class="footer-link trans" target="_self">FAQs</a>
+                            <a href="" class="footer-link trans" target="_self">Cuenta</a>
+                            <a href="" class="footer-link trans" target="_self">Términos y Condiciones</a>
+                            <a href="" class="footer-link trans" target="_self">Políticas y Restricciones</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="bg-negro rounded-4 overflow-hidden w-100 h-100" style="max-height: 45vh;">
+                <img src="./RECURSOS/Serenely Grand Modern Atrium.jpeg" alt="" class="general-img">
+            </div>
+        </div>
+    </div>
+ </footer>  
+<!-- FOOTER -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -488,6 +708,35 @@
             
         });
         
+    </script>
+
+    <script>
+        ScrollReveal({ 
+            reset: true,
+            distance: '4rem',
+            duration: 2500,
+            delay: 200
+        });
+
+        /* NAV */
+            ScrollReveal().reveal('.blur-bg-nav', { delay: 0, origin: 'top', reset: false });
+            ScrollReveal().reveal('.btns-calls', { delay: 400, origin: 'top', interval: 100, reset: false });
+            ScrollReveal().reveal('.btn-social', { delay: 400, origin: 'top', interval: 100, reset: false });
+            ScrollReveal().reveal('.navbar-brand', { delay: 400, origin: 'top', interval: 100, reset: false });
+            ScrollReveal().reveal('.btns-nav-menu', { delay: 400, origin: 'top', interval: 100, reset: false });
+        /* /NAV */
+
+        /* HEADER */
+            ScrollReveal().reveal('.header-category-container', { delay: 200});
+            ScrollReveal().reveal('.container-inner-inner-card-CH', { delay: 200, origin: 'bottom'});
+            ScrollReveal().reveal('.circle-header-category', { delay: 200, origin: 'right'});
+            ScrollReveal().reveal('.item-categoty-header', { delay: 200, origin: 'right', interval: 200, reset: false });
+        /* /HEADER */
+
+
+        /* CATEGORIAS */ 
+            ScrollReveal().reveal('.card-places-container', { delay: 200, origin: 'bottom', interval: 100 });
+        /* /CATEGORIAS */
     </script>
 </body>
 </html>

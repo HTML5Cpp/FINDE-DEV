@@ -59,6 +59,17 @@ function activeBTN(elemento){
    
 }
 
+let btn_ategorias = document.querySelectorAll('.categoria-item');
+btn_ategorias.forEach(btn => {
+    btn.addEventListener('click', () => {
+        for (let index = 0; index < btn_ategorias.length; index++) {
+            btn_ategorias[index].classList.remove('categoria-item-active');
+        }
+        btn.classList.add('categoria-item-active');
+    });
+});
+
+
 
 function conatrItems(num, pos){
     let conteendor = document.getElementById('counter-opcion-container');
