@@ -24,7 +24,7 @@ function backgroundCtaegories(pos){
     let categoria_header = document.getElementById('header-category-container-inner');
     let circle_header = document.getElementById('header-category-container-inner-circle');
     let imagesArrayHead = [
-        '../RECURSOS/HEADER_CATEGORIA/head-all.jpeg', 
+        './RECURSOS/HEADER_CATEGORIA/head-all.jpeg', 
         '../RECURSOS/HEADER_CATEGORIA/head-restaurant.jpeg', 
         '../RECURSOS/HEADER_CATEGORIA/head-culture.jpeg', 
         '../RECURSOS/HEADER_CATEGORIA/head-fun.jpeg', 
