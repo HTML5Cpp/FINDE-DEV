@@ -25,11 +25,19 @@ function backgroundCtaegories(pos){
     let circle_header = document.getElementById('header-category-container-inner-circle');
     let imagesArrayHead = [
         './RECURSOS/HEADER_CATEGORIA/head-all.jpeg', 
+<<<<<<< HEAD
         './RECURSOS/HEADER_CATEGORIA/head-restaurant.jpeg', 
         './RECURSOS/HEADER_CATEGORIA/head-culture.jpeg', 
         './RECURSOS/HEADER_CATEGORIA/head-fun.jpeg', 
         './RECURSOS/HEADER_CATEGORIA/head-party02.jpeg', 
         './RECURSOS/HEADER_CATEGORIA/head-health.jpeg'
+=======
+        '../RECURSOS/HEADER_CATEGORIA/head-restaurant.jpeg', 
+        '../RECURSOS/HEADER_CATEGORIA/head-culture.jpeg', 
+        '../RECURSOS/HEADER_CATEGORIA/head-fun.jpeg', 
+        '../RECURSOS/HEADER_CATEGORIA/head-party02.jpeg', 
+        '../RECURSOS/HEADER_CATEGORIA/head-health.jpeg'
+>>>>>>> c3a29660cfe00fbffe356102938dc07e6bc435b8
     ];
     let imagesArrayCir = [
         './RECURSOS/HEADER_CATEGORIA/circle-all.jpeg', 
