@@ -25,7 +25,6 @@ function backgroundCtaegories(pos){
     let circle_header = document.getElementById('header-category-container-inner-circle');
     let imagesArrayHead = [
         './RECURSOS/HEADER_CATEGORIA/head-all.jpeg', 
-<<<<<<< HEAD
         './RECURSOS/HEADER_CATEGORIA/head-restaurant.jpeg', 
         './RECURSOS/HEADER_CATEGORIA/head-culture.jpeg', 
         './RECURSOS/HEADER_CATEGORIA/head-fun.jpeg', 
